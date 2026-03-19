@@ -1,0 +1,36 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grid0 {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px; /* space between 3x3 grids */
+}
+
+#grid0 > div {
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(3, 50px);
+}
+
+input {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;  
+    font-size: 18px;
+}
