@@ -11,8 +11,16 @@ const inputs7 = document.querySelectorAll("#grid7 input");
 const inputs8 = document.querySelectorAll("#grid8 input");
 const inputs9 = document.querySelectorAll("#grid9 input");
 
-function generate() {
-    const grids = [inputs1, inputs2, inputs3, inputs4,inputs5, inputs6, inputs7, inputs8, inputs9];
+const grids = [inputs1, inputs2, inputs3, inputs4,inputs5, inputs6, inputs7, inputs8, inputs9];
 
+function generate() {
+    for (let i = 0; i < grids.length; i++) {
+
+    }
 }
+
+function getIntersectingNumbers(gridnum, inputnum) {
+    
+}
+
 button.addEventListener('click', generate);
