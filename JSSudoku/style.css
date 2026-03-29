@@ -37,3 +37,13 @@ input {
     line-height: 40px;  
     font-size: 18px;
 }
+
+#difficulty {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;  
+    font-size: 18px;
+    margin: 5px;
+}
