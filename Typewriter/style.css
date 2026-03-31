@@ -1,0 +1,80 @@
+body, #editor, .bar button {
+  font-family: "Courier", Courier, monospace;
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+  margin: 0 auto;
+  max-width: 1000px; /* limits width */
+  width: 100%;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Top section */
+#top {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Bars */
+.bar {
+  display: flex;
+  flex-wrap: nowrap;      /* 👈 no wrapping */
+  padding: 5px;
+  background: #222;
+  gap: 5px;
+  align-items: center;
+  overflow-x: auto;       /* 👈 horizontal scroll */
+  scrollbar-width: thin;  /* for Firefox */
+}
+
+/* Buttons */
+.bar div button:first-child {
+  flex: 0 0 auto;         /* natural size for file/chapter button */
+  white-space: nowrap;
+  padding: 6px 10px;
+}
+
+.bar div button:last-child {
+  flex: 0 0 auto;
+  background: #ffa9a9;
+  color: white;
+  padding: 2px 6px;       /* 👈 smaller delete button */
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Hide scrollbar for Webkit but keep scroll functionality */
+.bar::-webkit-scrollbar {
+  height: 8px;
+}
+.bar::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.4);
+  border-radius: 4px;
+}
+
+/* Editor fills remaining space */
+#editor {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+/* Active */
+.active {
+  background: rgb(131, 131, 131);
+  color: black;
+}
